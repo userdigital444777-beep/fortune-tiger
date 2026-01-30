@@ -99,15 +99,97 @@
       text-align: center;
     }
   </style>
+
+  
+<style>
+  .age-check {
+    width: 100%;
+    height: 70vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .age-box {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .age-image {
+    width: 140px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .age-text {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .age-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .age-buttons button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    min-width: 120px;
+  }
+
+  .btn-yes {
+    background: #2ecc71;
+    color: #000;
+  }
+
+  .btn-no {
+    background: #e74c3c;
+    color: #fff;
+  }
+
+  .btn-yes:hover { opacity: 0.9; }
+  .btn-no:hover { opacity: 0.9; }
+
+  /* Responsividade */
+  @media (max-width: 480px) {
+    .age-text {
+      font-size: 1.1rem;
+    }
+    .age-buttons button {
+      width: 100%;
+    }
+  }
+</style>
 </head>
 <body>
 
-  <div class="topo-do-site"> 
-    <img width="140px" src="https://betwinnerlink.com/images/fortune-tiger.png" title="Fortune Tiger" />
-    <p>Você é maior de 18 anos?</p>
-    <button class="btn-verde">SIM</button>
-    <button class="btn-vermelho">NÃO</button>
+<!-- BLOCO VERIFICAÇÃO 18+ -->
+<div class="age-check">
+  <div class="age-box">
+    <img 
+      src="https://betwinnerlink.com/images/fortune-tiger.png" 
+      alt="Fortune Tiger"
+      class="age-image"
+    />
+
+    <p class="age-text">Você tem mais de 18 anos?</p>
+
+    <div class="age-buttons">
+      <button class="btn-yes">SIM</button>
+      <button class="btn-no">NÃO</button>
+    </div>
   </div>
+</div>
+
+
 
 <header>
   <h1>Fortune Tiger – Jogo do Tigrinho</h1>
